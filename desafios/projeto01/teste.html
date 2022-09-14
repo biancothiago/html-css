@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Resposividade</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+        }
+        main {
+            background-color: snow;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; 
+            /*Mudamos de 320px para 280px, pois tinhamos definimos um padding de 20px, somando 40px considerando direita e esquerda*/
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+            /*A imagem se ocupará 100% da largura de onda ela estiver. Nesse exemplo, ela está dentro do elemento de bloco main, ocupando então 100% do main e não do body*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Responsividade</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam laborum soluta placeat, est voluptate laudantium perspiciatis eum veritatis quam vero tempora rerum ipsum in aut? Maxime, cumque? Molestias, vel ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloribus, repudiandae ab qui quam consectetur voluptatem quas nihil vitae expedita ipsam numquam incidunt illo assumenda distinctio totam omnis maxime accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora adipisci quo nihil dicta dolorum dignissimos cupiditate error dolore eveniet! Sit at reprehenderit iusto, fuga numquam modi? Ad voluptates neque delectus!</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpeg">
+            <img src="imagens/irina-blok.jpg" alt="Irina">
+        </picture>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam laborum soluta placeat, est voluptate laudantium perspiciatis eum veritatis quam vero tempora rerum ipsum in aut? Maxime, cumque? Molestias, vel ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloribus, repudiandae ab qui quam consectetur voluptatem quas nihil vitae expedita ipsam numquam incidunt illo assumenda distinctio totam omnis maxime accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora adipisci quo nihil dicta dolorum dignissimos cupiditate error dolore eveniet! Sit at reprehenderit iusto, fuga numquam modi? Ad voluptates neque delectus!</p>
+    </main>
+</body>
+</html>

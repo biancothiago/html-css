@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*
+    tudo que em HTML é id = em CSS é # (só pode um elemento por página/ documento)
+    tudo que em HTML é class = em CSS é . (pode vários elementos)
+*/
+
+body{
+    background-color: #98EE98;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*h1 genérico => se aplica a todos os h1 da página*/
+h1{
+    color: #246B24;
+}
+
+/*MAS, o h1 que tiver o identificador principal terá as configurações abaixo: */
+h1#principal{
+    text-align: center;
+    background-color: #246B24;
+    color: white;
+}
+/* Nesse caso, a cor desse id vai se sobrepor a cor definido no seletor h1*/
+/*Colocar o h1 não é obrigatório*/
+
+h2{
+    color: #456B45;
+}
+
+.basico{
+    color: #246B24;
+}
+/*Tudo que for da classe basico ficará com essa cor pastel verde*/
+.intermediario{
+    color: #6b6a24;
+}
+/*Tudo que for da classe intermediario ficará com essa cor pastel amerela*/
+.avancado{
+    color: #6b2924
+}
+/*Tudo que for da classe avancado ficará com essa cor pastel vermelha*/
+.destaque{
+    background-color: rgb(235, 235, 81)
+}

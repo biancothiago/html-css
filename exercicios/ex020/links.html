@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: orangered;
+            text-decoration: none; /* retira o sublinhado*/
+            font-weight: bold;
+        }
+        /* Se mantivermos somente o seletor a, tanto site visitado como não visitado ficam da mesma cor */
+        a:visited {
+            color: aqua;
+        }
+        /*A pseudo-classe visited controla as configurações do link após ele ter sido visitado*/
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        /*Configuração para quando passarmos o mouse por cima do link*/
+        a:active {
+            color: darkorange;
+        }
+        /*Pseudo-classe active usada é usada para configurarações que acontecem durante o click do mouse sobre o elemento*/
+        .especial {
+            background-color: rgb(240, 128, 49);
+        }
+        .especial::before {
+            content: '⇒ ';
+        }
+        /*TUDO QUE FOR DA CLASSE ESPECIAL, terá antes de cada elemento uma setinha para direita como conteúdo*/
+        .especial::after {
+            content: ' ⇐';
+        }
+        /*TUDO QUE FOR DA CLASS ESPECIAL: Depois (after) de cada elemento a será colocado um conteúdo (conteúdo)*/
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

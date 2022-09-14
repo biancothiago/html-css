@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links</h1>
+        <h2>Links externos</h2>
+            <p>Você pode acessar o <a href="https://gustavoguanabara.github.io/">repositório público do Guanarara no GitHub</a></p>
+            <!-- a => anchor; href => hiperlink reference. Dentro do href nós colocamos a URL completa. -->
+            <!-- Dessa forma o link externo se sobrepõe ao site original-->
+            <p>Você também pode acessar o <a href="https://www.youtube.com/CursoemVideo" target="_blank" rel="external">canal gratuito dele no Youtube</a></p>
+            <!-- rel => relative (é relativo a um link externo) -->
+            <!--Esse é um link do tipo externo (que nos jogará para fora do site) e queremos que um alvo em branco (ou seja, uma janela em branco)-->
+            <!--Essa segunda forma com atributos é a recomendável-->
+        <h2>Links internos</h2>
+            <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+            <!-- Portanto, no caso de links internos, basta colocar o nome do arquivo no href (apertar CTRL + ESPAÇO e selecionar). Dentro do rel, colocamos next (próxima) para nos referir a próxima página, facilitando o mecanismo de busca a encontrar qual o sistema de navegação estamos criando (informamos ao Google qual é o próxima página) -->
+            <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+            <!-- Self = próprio (ou seja, na própria aba)-->
+            <!-- o _self indica que queremos carregar a página na mesma aba. Podemos colocar esse target ou simplesmente não colocar esse comando.-->
+        <h2>Links para download</h2>
+            <ul>
+                <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+                <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+                <!--No caso do Google Chrome, o navegador já reconhece o arquivo pdf, abrindo-o em outro página-->
+                <!--Com os atributos download e type o download pode acontecer de forma automática em outros navegadores-->
+            </ul>
+</body>
+</html>

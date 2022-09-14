@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+        /* Irá configurar somente os parágrafos que estiverem dentro de uma div, ou seja, que forem filhos de uma div */
+        /* Esse seletor esconde os parágrafos que estão dentro de divs */
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: orangered;
+            width: 200px;
+        }
+        /* LÊ-SE: "Quando passarmos o mouse sobre a div, o parágrafo que está dentro irá se comportar... "*/
+        div:hover {
+            color: greenyellow;
+        }
+
+        /* Ou seja, quando passarmos o mouse sobre a div acontecerá duas coisas: o texto da div mudará de cor e o paráfrago dentro dela aparecerá*/
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+        <p>Passe o mouse sobre o texto abaixo</p>
+        <div>
+            Passe o mouse aqui
+            <p>TEXTO ESCONDIDO...</p>
+        </div>
+        <p>Fim do exemplo</p>
+</body>
+</html>
